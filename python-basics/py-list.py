@@ -92,10 +92,35 @@ for fruit in list_2:
     if fruit == "banana":
         print(fruit)
         
-total = 0        
+total = 0    
+empty_list = []    
 for x in my_list:
     total += x
+    empty_list.append(x * 3)
 
 
 print(total)
 print(total / len(my_list))
+print(empty_list)
+
+
+for i in range(len(my_list)):
+    my_list[i] += my_list[i]
+
+
+print(my_list)
+
+new_list = [x for x in my_list if x == 10]
+
+print(new_list)
+
+
+new_list2 = []
+
+for x in my_list:
+    if x == 10:
+        new_list2.append(x)
+        
+print(new_list2)
+
+# [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]

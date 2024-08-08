@@ -12,3 +12,11 @@ print(type(age))
 
 print(int(age) + 2)
 print(int(age) * 2)
+
+"""
+CASTING LISTS, TUPLES, SETS, AND DICTIONARIES
+"""
+
+my_tuple = (1, 2, 3, 5)
+
+print(type(list(my_tuple)))

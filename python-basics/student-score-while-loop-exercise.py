@@ -11,3 +11,5 @@ while True:
     subject_and_score.append({"subject": subject, "score": score})
     total_score += score 
     print(f"Subject: {subject}\nScore  : {score}")
+    
+print(subject_and_score)

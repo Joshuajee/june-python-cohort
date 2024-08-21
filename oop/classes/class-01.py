@@ -18,3 +18,5 @@ person.name = "Max"
 person2.talk()
 
 person.talk()
+
+print(type(person))

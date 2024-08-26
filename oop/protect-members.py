@@ -64,3 +64,8 @@ account2 = ChildAccount("John Werner", 100000, 1234)
 print(account1.get_bvn())
 account1.update_bvn(1234)
 print(account1.get_bvn())
+
+
+account1.__balance = 84
+
+print(account1.get_balance())

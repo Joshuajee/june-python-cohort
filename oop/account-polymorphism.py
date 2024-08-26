@@ -27,12 +27,14 @@ class Account:
         
 class TaxedAccount(Account):
     
+    tax_rate = 0.1
+    
     def transfer(self, account, amount):
         super().withdraw(amount)
         account.deposit(amount)
     
     def withdraw(self, amount):
-        tax = amount * 0.1
+        tax = amount * self.tax_rate
         super().withdraw(amount + tax)
 
 
@@ -55,3 +57,4 @@ print(account1.balance, taxed_account1.balance)
 taxed_account1.transfer(account1, 10000)
 
 print(account1.balance, taxed_account1.balance)
+

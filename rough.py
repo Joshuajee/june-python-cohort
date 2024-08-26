@@ -1,20 +1,31 @@
 class Person:
-    name = "John"
-    height = 170
+    name = None
+    age = None
     
-    def talk(self):
-        print(self.name, "is talking")
+    def __init__(self, name, age):
+        print("INIT")
+        self.name = name
+        self.age = age
         
-person = Person()
+    
+    def speak(self):
+        print(self.name, "is speaking")
+        
+    def grow(self):
+        self.age += 1
+        
+    def __del__(self):
+        print(self.name, "is destroyed")
+        
+        
+person = Person("John", 15)
 
-person2 = Person()
+person2 = Person("Max", 20)
 
-person.talk()
+person.speak()
 
-person2.talk()
+person2.speak()
 
-person.name = "Max"
+del person2
 
-person2.talk()
-
-person.talk()
+print("Hello")
